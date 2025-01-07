@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Portfolio</title>
+  <!-- Example of including Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0C0C0C;
+      color: #DADADA;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      background: #0C0C0C;
+      padding: 1rem 2rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #9AD98D;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4EC6E0;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* Replace the URL below with a free Darknet Diaries wallpaper link or another cybersecurity-themed image */
+      background: url('https://darknetdiaries.com/imgs/wallpapers/Nightsea_desktop.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5); /* Dark overlay */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #9AD98D;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #EFEFEF;
+    }
+
+    .btn {
+      background: #9AD98D;
+      color: #0C0C0C;
+      padding: 0.7rem 1.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #4EC6E0;
+      color: #FFF;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #9AD98D;
+      text-transform: uppercase;
+      border-bottom: 2px solid #9AD98D;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    .section-content {
+      margin-top: 2rem;
+    }
+
+    /* Experience/Projects Layout */
+    .experience-item, .project-item {
+      margin-bottom: 2rem;
+    }
+
+    .experience-item h3,
+    .project-item h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #4EC6E0;
+    }
+
+    .experience-item p,
+    .project-item p {
+      margin-left: 1rem;
+    }
+
+    /* Certifications Section */
+    .certifications-list {
+      list-style: disc;
+      margin-left: 2rem;
+    }
+
+    /* Education Section */
+    .education-item {
+      margin-bottom: 1.5rem;
+    }
+
+    /* Contact Section */
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-info a {
+      color: #9AD98D;
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0C0C0C;
+      border-top: 1px solid #333;
+    }
+
+    footer p {
+      color: #9AD98D;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects & Blogs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sebastian Bowman</h1>
+      <p>Security Engineer | Cybersecurity Instructor | Technical Repair Expert</p>
+      <a href="#about" class="btn">Enter the Grid</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="section-content">
+      <p>
+        I am a passionate cybersecurity professional with a focus on penetration testing,
+        security analysis, and educating others in cybersecurity fundamentals. My background
+        spans hands-on technical repair, mentoring, and vulnerability testing. 
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="section-content">
+      <div class="experience-item">
+        <h3>Security Engineer</h3>
+        <p>
+          Conducted penetration tests, vulnerability assessments, and SDLC/SI to
+          protect organizations from emerging threats. Penetration tests were primarly on Fortune
+          500 Oil and Gas companies and school districts. SDLC/SI was conduction mainly on Wordpress
+          websites and mobile applications. Ensursed systems were up to NIST standards.
+        </p>
+      </div>
+      <div class="experience-item">
+        <h3>Cybersecurity Instructor</h3>
+        <p>
+          Taught college students core cybersecurity concepts from CompTIA Network+ and guided them
+          through Capture the Flag (CTF) exercises to hone practical skills.
+        </p>
+      </div>
+      <div class="experience-item">
+        <h3>Technical Repair</h3>
+        <p>
+          Diagnosed and repaired a variety of technical equipment for a school district,
+          ensuring smooth operations and safe usage of devices. Repaired anything brought
+          to us, iPad screens, projectors, laptops, anything we could handle.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="section-content">
+      <ul class="certifications-list">
+        <li>Offensive Security Certified Professional (OSCP)</li>
+        <li>CompTIA - IT Fundamentals +</li>
+        <li>CompTIA - Security + CE</li>
+        <li>ISC2 - Certified in Cybersecurity</li>
+        <li>Apple Certified Macintosh Technician</li>
+        <li>Apple Certified iOS Technician</li>
+        <li>Career Technical Education – Network Fundamentals (888Post)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="section-content">
+      <div class="education-item">
+        <h3>Bachelor's Degree - University of North Texas</h3>
+        <p>Computer Science, Bachelors of Arts and Applied Sciences August 2022 – December 2024</p>
+      </div>
+      <div class="education-item">
+        <h3>Associate's Degree - North Texas Central College</h3>
+        <p>Cyber Security A.A.S, Computer and Information Systems Security. May 2022</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects & Blogs Section -->
+  <section id="projects">
+    <h2>Projects & Blogs</h2>
+    <div class="section-content">
+      <div class="project-item">
+        <h3>GitHub Repositories</h3>
+        <p>
+          Check out my open-source security tools and scripts on 
+          <a href="https://github.com/cbass12321" target="_blank">GitHub</a>.
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>Blog Posts</h3>
+        <p>
+          <strong>Beginner’s Guide to HID iClass Cloning with the Flipper Zero:</strong><br>
+          <a href="https://www.standardusercyber.com/post/beginner-s-guide-to-hid-iclass-cloning-with-the-flipper-zero" 
+             target="_blank">
+            Read Article
+          </a>
+        </p>
+        <p>
+          <strong>Prove Packet Tracking:</strong><br>
+          <a href="https://www.standardusercyber.com/post/wifi-digital-tracking" 
+             target="_blank">
+            Read Article
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="section-content contact-info">
+      <p>Best place to get ahold of me</p>
+      <a href="mailto:cbassbowman@gmail.com">Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Made this for fun, feel free using!</p>
+  </footer>
+</body>
+</html>
